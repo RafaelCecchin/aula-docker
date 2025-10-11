@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  apache:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: nome_do_container2
+    ports:
+      - "9000:80"
+    stdin_open: true
+    tty: true
